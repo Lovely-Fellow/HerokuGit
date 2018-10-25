@@ -8,7 +8,7 @@ class SubscriberAddForm(forms.ModelForm):
         widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'email'})
     )
     
-    """firstname = forms.CharField(
+    firstname = forms.CharField(
         widget=forms.TextInput(
             attrs={'class': 'form-control', 'placeholder': 'First Name'}
         )
@@ -19,7 +19,7 @@ class SubscriberAddForm(forms.ModelForm):
             attrs={'class': 'form-control', 'placeholder': 'Last Name'}
         )
     )
-    """
+    
     class Meta:
         model = Subscriber
         fields = ('email', 'firstname', 'lastname')
